@@ -1,0 +1,17 @@
+version: '3'
+services:
+  myapp:
+    container_name: myapp
+    restart: always
+    build: .
+    ports:      
+      - '5000:5000'
+    links:
+      - redis
+      - mongo
+  mongo:    
+    image: 'mongo'
+    ports:
+      - "27017:27017"
+  redis:    
+    image: 'redis'
