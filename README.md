@@ -1,4 +1,4 @@
-# EfuseBack
+# NodeSample
 Demo project involving node/express, mongo db and redis in dockerized enviroment
 
 # Build App with Docker
